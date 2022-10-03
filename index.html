@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bryntum Calendar - Microsoft Outlook integration</title>
+  </head>
+  <body>
+    <main id="main-container" role="main" class="container">
+      <div id="content" style="display: none">
+        <div id="calendar"></div>
+      </div>
+      <a id="signin" href="#">
+        <img
+          src="./images/ms-symbollockup_signin_light.png"
+          alt="Sign in with Microsoft"
+        />
+      </a>
+    </main>
+    <script
+      src="https://alcdn.msauth.net/browser/2.1.0/js/msal-browser.min.js"
+      integrity="sha384-EmYPwkfj+VVmL1brMS1h6jUztl4QMS8Qq8xlZNgIT/luzg7MAzDVrRa2JxbNmk/e"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@microsoft/microsoft-graph-client/lib/graph-js-sdk.js"></script>
+    <script src="auth.js"></script>
+    <script src="graph.js"></script>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
